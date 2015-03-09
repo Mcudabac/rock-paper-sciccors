@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+char melGibson;
+cout << "Let's play Rock, Paper, Scissors" << endl;
+do{
+int andrewJackson;
+cout << "Enter 1 for rock, 2 for paper, 3 for scissors" << endl;
+cin >> andrewJackson;
+
+switch(andrewJackson)
+{
+case 1:
+cout << "You chose rock" << endl;
+break; 
+    
+case 2:
+cout << "You chose paper" << endl;
+break; 
+
+case 3:
+cout << "You chose scissors" << endl;
+break;
+
+default:
+cout << andrewJackson << " is not a valid choice" << endl;
+}
+cout << "Would you like to play again (Y for yes, N for no)?" << endl;
+cin >> melGibson;
+}
+while (melGibson == 'Y');
+return 0;
+}
